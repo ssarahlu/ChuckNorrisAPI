@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/joke"
+        android:layout_width="331dp"
+        android:layout_height="306dp"
+        android:ellipsize="none"
+        android:gravity="center"
+        android:singleLine="false"
+        android:text="Joke"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="italic"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.252" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="141dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="432dp"
+        android:background="@drawable/button"
+        android:text="INSPIRE ME"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#1C1C1C"
+        android:textColorHint="#36549D"
+        android:textSize="18sp"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/copyIcon"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="24dp"
+        android:background="#00FFFFFF"
+        android:tint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:srcCompat="?attr/actionModeCopyDrawable" />
+
+    <Button
+        android:id="@+id/copyButton"
+        android:layout_width="110dp"
+        android:layout_height="37dp"
+        android:background="@drawable/copybutton"
+        android:text="COPY QUOTE"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#F4F4F4"
+        android:textColorHint="#36549D"
+        android:textSize="14sp"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/copyIcon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
